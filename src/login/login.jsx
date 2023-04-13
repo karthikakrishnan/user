@@ -49,6 +49,7 @@ const Login = () => {
           onChange={handleInputChange}
         />
         { errorMessage && <Alert id="loginError" severity="error">Invalid credentials</Alert> }
+        {!errorMessage && <Alert severity="success" id="validLogin">Login successful</Alert> }
         <Button id='login' onClick={loginUser} variant="contained" type='button'>Login</Button>
       </header>
     </div>

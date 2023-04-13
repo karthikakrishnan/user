@@ -14,9 +14,19 @@ Not used when we need to test in multiple browser/tabs
 
 # Installation and libraries
 npm install cypress
-Mocha, Chai
+Assertion libraries used - Mocha, Chai
 
-# Create and write test suite and test cases
+# Cypress configuration file
+Configuration options for the tests
+update default timeout for e2e, component tests
 
-# Element location
-# Element interaction
+# Fixtures
+Test data for your spec file that you can use to validate various scenarios
+Consume the fixture in your spec like cy.fixture('login') login is the name of my fixture here and use data within login to modify testing data
+
+# Custom commands
+Write your own commands in cypress to perform certain repetetive actions
+Cypress.Commands.add('command name', options)
+options can be call back and do what we want when this command is executed
+How to execute this command ? - Simply cy.commandName()
+
